@@ -1,0 +1,111 @@
+.left-menu{
+  width: 100px;
+  background-color: white;
+
+  float: left;
+}
+
+.container{
+  margin-top: 50px;
+}
+div.container-rabbit {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+
+}
+
+.right-menu{
+
+}
+.bag {
+  width: 50px;
+  margin-top: 100px ;
+}
+.circle{
+  margin-top: 100px ;
+}
+.container-circle{
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 100px ;
+
+
+}
+div.container-circle.img {
+  width: 45px;
+  height: 45px;
+
+  transition: width 3s,height 3s;
+
+}
+
+div.container-circle.img:hover{
+  height: 50px;
+  width: 50px;
+}
+.search {
+  margin-top: 100px ;
+}
+
+div.container-bag{
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+div.container-search{
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+.vl{
+  text-align: center;
+  justify-content: center;
+  border-left: 6px solid yellow;
+
+}
+.right-menu{
+  width: 960px;
+
+
+}
+div.pineapples#line{
+  border-top: 6px solid yellow;
+
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+}
+div.social-network.div{
+  height: 30px;
+  width: 30px;
+}
+.sub-title{
+  justify-content: flex-start;
+  top: 420px;
+  position: absolute;left: 430px;
+  color: yellow;
+  font-size: 60px;
+
+}
+div.sub-title.sub#texting{
+
+
+}
+span{
+  color: #39553A;
+  opacity: 100%;
+}
+
