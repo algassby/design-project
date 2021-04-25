@@ -1,3 +1,4 @@
+/*
 .left-menu{
   width: 100px;
   background-color: white;
@@ -78,7 +79,6 @@ div.container-search{
 .right-menu{
   width: 960px;
 
-
 }
 div.pineapples#line{
   border-top: 6px solid yellow;
@@ -109,3 +109,149 @@ span{
   opacity: 100%;
 }
 
+*/
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #F7F8FA;
+}
+
+#navbar{
+  height: 100%;
+  width: 150px;
+  background-color: #fff;
+}
+
+#navbar #rabbit {
+  width: 69px;
+  height: 57px;
+  margin-top: 56px;
+}
+
+.logo{
+  height: 270px;
+}
+
+#navbar .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bag {
+  width: 20px;
+  height: 18px;
+}
+
+.dot{
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.flex-center-v-h{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container{
+  display: flex;
+  height: 539px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h-line{
+  width: 1px;
+  height: 50px;
+  background-color: #F3D145;
+}
+
+.footer {
+  height: 270px;
+  text-transform: uppercase;
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font: normal normal bold 20px/28px "acumin-pro";
+  letter-spacing: 0px;
+}
+
+  .name-of-company{
+    color: #F1D145;
+  }
+
+  .corps{
+    display: flex;
+    flex-direction: row;
+  }
+  .right-menu{
+    background-image: url('../../assets/images/pineapple.png');
+    background-position: bottom left -200px;
+    width: 1920px;
+
+
+  }
+  .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 65px;
+    top: 71px;
+    left: 794px;
+    width: 1080px;
+    height: 165px;
+
+    opacity: 1
+  }
+  .title{
+    top: 76px;
+    left: 266px;
+    width: 168px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 24px/29px Acumin Pro;
+    letter-spacing: 1.8px;
+    color: #3B573B;
+    opacity: 1;
+  }
+  .fruits{
+    top: 71px;
+    left: 794px;
+    width: 120px;
+    height: 165px;
+    opacity: 1;
+  }
+  .legumes{
+    top: 71px;
+    left: 1281px;
+    width: 122px;
+    height: 165px;
+    opacity: 1
+  }
+  .social-network{
+    top: 116px;
+    left: 1839px;
+    width: 21px;
+    height: 21px;
+    border-radius: 18px;
+    opacity: 1;
+  }
+  .sub-title{
+    top: 130px;
+    left: 0px;
+    width: 1064px;
+    height: 150px;
+    text-align: left;
+    font: normal normal 900 150px/130px Acumin Pro;
+    letter-spacing: 7.5px;
+    color: #FBD848;
+  }
+  #span{
+    color: #39553A;
+  }
