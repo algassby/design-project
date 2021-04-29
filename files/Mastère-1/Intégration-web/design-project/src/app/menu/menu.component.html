@@ -113,8 +113,10 @@
           <i class="fa fa-briefcase"></i>
         </div>
         <span class="h-line"></span>
-        <div class="dot flex-center-v-h">
-          <i class="fa fa-ellipsis-h"></i>
+        <div class="dot flex-center-v-h" (click)="toggleMenu()">
+          <img *ngIf="isMenuCollapsed" src="assets/images/circleRound.PNG"/>
+          <span *ngIf="!isMenuCollapsed">X</span>
+
         </div>
         <span class="h-line"></span>
         <div class="search">
@@ -127,14 +129,12 @@
       </div>
     </div>
   </div>
-
-  <div class="right-menu">
+<!-- right menu-->
+  <div *ngIf="isShowingRightMenu" class="right-menu">
     <div class="head">
       <div class="title">
-        <div class="line">
-        </div>
-        <div>
-          <p class="">Our products</p>
+        <div class="">
+         <span class="v-line"></span> <p class="">Our products</p>
         </div>
 
       </div>
@@ -143,17 +143,17 @@
         <div class="line">
 
         </div>
-        <div>
-          <span class="h-line"></span> <p class="">pineapples</p>
+        <div class="">
+          <p class="d-flex-title"><span class="v-line"></span> <span>pineapples</span></p>
         </div>
         <div>
-          <span class="h-line"></span><p class="">Strawberries</p>
+          <p class="d-flex-title"> <span class="v-line"></span> <span> Strawberries </span></p>
         </div>
         <div>
-          <span class="h-line"></span> <p class="">Apples</p>
+          <p class="d-flex-title"> <span class="v-line"></span>  <span>Apples</span></p>
         </div>
         <div>
-          <span class="h-line"></span><p class="">Citrus</p>
+          <p class="d-flex-title"> <span class="v-line"></span>   <span> Citrus </span></p>
         </div>
 
       </div>
@@ -163,16 +163,16 @@
 
         </div>
         <div>
-          <span class="h-line"></span> <p class="">Cauliflowers</p>
+          <p class="d-flex-title"><span class="v-line"></span> <span>Cauliflowers</span></p>
         </div>
         <div>
-          <span class="h-line"></span><p class="">Tomatoes</p>
+          <p class="d-flex-title"> <span class="v-line"></span> <span>Tomatoes</span></p>
         </div>
         <div>
-          <span class="h-line"></span> <p class="">Eggplants</p>
+          <p class="d-flex-title">  <span class="v-line"></span> <span>Eggplants</span></p>
         </div>
         <div>
-          <span class="h-line"></span><p class="">Carrots</p>
+          <p class="d-flex-title"><span class="v-line"></span><span>Carrots</span></p>
         </div>
 
       </div>
@@ -197,11 +197,84 @@
     <div class="sub-title">
       <div id="texting">
         <p>Our fruits<br/> & vegetables <br/> are <span id="span" >organic.</span></p>
-
       </div>
+
+    </div>
+    <div class="lorem-ichum">
+      <p id="lorem-body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+  </div>
+  <div class="discover">
+    <p>Discover</p>
+  </div>
+</div>
+<!-- right menu-->
+<!--detail menu-->
+<div *ngIf="!isShowingRightMenu" class="right-detail">
+  <div class="head">
+    <div class="title">
+      <div class="">
+        <span class="v-line"></span> <p class="">Our products</p>
+      </div>
+
     </div>
 
+    <div class="fruits">
+      <div class="line">
+
+      </div>
+      <div class="">
+        <p class="d-flex-title"><span class="v-line"></span> <span>pineapples</span></p>
+      </div>
+      <div>
+        <p class="d-flex-title"> <span class="v-line"></span> <span> Strawberries </span></p>
+      </div>
+      <div>
+        <p class="d-flex-title"> <span class="v-line"></span>  <span>Apples</span></p>
+      </div>
+      <div>
+        <p class="d-flex-title"> <span class="v-line"></span>   <span> Citrus </span></p>
+      </div>
+
+    </div>
+
+    <div class="legumes">
+      <div class="line">
+
+      </div>
+      <div>
+        <p class="d-flex-title"><span class="v-line"></span> <span>Cauliflowers</span></p>
+      </div>
+      <div>
+        <p class="d-flex-title"> <span class="v-line"></span> <span>Tomatoes</span></p>
+      </div>
+      <div>
+        <p class="d-flex-title">  <span class="v-line"></span> <span>Eggplants</span></p>
+      </div>
+      <div>
+        <p class="d-flex-title"><span class="v-line"></span><span>Carrots</span></p>
+      </div>
+
+    </div>
+
+    <div class="social-network">
+      <div>
+        <img class="img-fluid bag" src="assets/images/twitter.png" height="30" width="30">
+      </div>
+      <div>
+        <img class="img-fluid bag" src="assets/images/facebook.png" height="30" width="30">
+      </div>
+      <div>
+        <img class="img-fluid bag" src="assets/images/instagram.png" height="30" width="30">
+      </div>
+      <div>
+        <img class="img-fluid bag" src="assets/images/youtube.png" height="30" width="30">
+      </div>
+
+    </div>
   </div>
+
+
 </div>
 <!--menu-->
 

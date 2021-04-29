@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  isMenuCollapsed = true;
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+  }
+  toggleMenu(): void{
+    this.isMenuCollapsed = !this.isMenuCollapsed;
   }
 
 }
